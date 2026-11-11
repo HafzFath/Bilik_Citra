@@ -1,0 +1,5 @@
+// Tambahkan di routes/web.php
+use App\Http\Controllers\ImageProcessingController;
+
+Route::get('/pengolahan-citra', [ImageProcessingController::class, 'index'])
+    ->name('citra.index');
